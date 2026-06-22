@@ -236,6 +236,25 @@ a{color:inherit;text-decoration:none;}
 .ok-warn{background:#FEF2F2;border:1px solid #FECACA;border-radius:7px;padding:14px 18px;margin-top:14px;font-size:13px;color:#7F1D1D;line-height:1.75;}
 .ok-warn strong{display:block;font-weight:800;margin-bottom:6px;}
 
+/* INVITE CHALLENGE */
+.invite-challenge{background:linear-gradient(135deg,#004182 0%,#0A66C2 60%,#1a8fff 100%);border-radius:var(--r);padding:28px;margin-bottom:18px;box-shadow:var(--sm);color:white;position:relative;overflow:hidden;}
+.invite-challenge::after{content:'🏆';position:absolute;right:-10px;top:-10px;font-size:120px;opacity:.08;pointer-events:none;}
+.ic-label{font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;opacity:.7;margin-bottom:10px;}
+.ic-title{font-size:22px;font-weight:900;margin-bottom:6px;letter-spacing:-.3px;}
+.ic-sub{font-size:14px;opacity:.85;line-height:1.7;margin-bottom:22px;}
+.ic-conditions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px;}
+.ic-cond{flex:1;min-width:180px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:16px 18px;display:flex;align-items:flex-start;gap:12px;}
+.ic-cond-ico{font-size:28px;flex-shrink:0;}
+.ic-cond-body strong{display:block;font-size:15px;font-weight:800;margin-bottom:4px;}
+.ic-cond-body span{font-size:13px;opacity:.85;line-height:1.6;}
+.ic-reward{background:rgba(255,255,255,.95);border-radius:12px;padding:20px 22px;color:var(--t);}
+.ic-reward-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px;}
+.ic-reward-head strong{font-size:16px;font-weight:800;color:var(--li-d);}
+.ic-reward-badge{background:linear-gradient(90deg,var(--li-d),var(--li));color:white;font-size:11px;font-weight:800;padding:3px 10px;border-radius:20px;white-space:nowrap;}
+.ic-reward-items{display:flex;flex-direction:column;gap:10px;}
+.ic-reward-item{display:flex;align-items:flex-start;gap:10px;font-size:14px;line-height:1.65;}
+.ic-reward-item span{color:var(--t2);}
+
 @media(max-width:640px){
   .hero{padding:30px 20px;}
   .pb-body{grid-template-columns:1fr;}
@@ -507,6 +526,44 @@ a{color:inherit;text-decoration:none;}
       </div>
     </div>
 
+    <!-- INVITE CHALLENGE -->
+    <div style="margin-bottom:18px;">
+      <div class="sh"><span class="sh-t">🏆 達成で特別グループへ招待</span><span class="sh-s">2つのミッションをクリアすると特典あり</span></div>
+      <div class="invite-challenge">
+        <div class="ic-label">LinkedIn チャレンジ</div>
+        <h2 class="ic-title">この2つを達成したら、特別グループへ招待します🎉</h2>
+        <p class="ic-sub">コツコツ続けた証として、条件を達成したメンバーをLit ShipのLinkedIn推進グループに招待します。<br>投稿を続けて、繋がりを広げていくと自然と辿り着きます。</p>
+        <div class="ic-conditions">
+          <div class="ic-cond">
+            <div class="ic-cond-ico">📅</div>
+            <div class="ic-cond-body">
+              <strong>① 3週連続投稿</strong>
+              <span>毎週火曜日の全員投稿を、3週連続で継続すること。まずはここから始めよう。</span>
+            </div>
+          </div>
+          <div class="ic-cond">
+            <div class="ic-cond-ico">🤝</div>
+            <div class="ic-cond-body">
+              <strong>② 繋がり300人突破</strong>
+              <span>コネクション数が300人を超えること。毎週の申請ルーティンを続ければ必ず届く。</span>
+            </div>
+          </div>
+        </div>
+        <div class="ic-reward">
+          <div class="ic-reward-head">
+            <span style="font-size:22px;">🎁</span>
+            <strong>達成特典：LinkedIn 推進グループへの招待</strong>
+            <span class="ic-reward-badge">限定グループ</span>
+          </div>
+          <div class="ic-reward-items">
+            <div class="ic-reward-item">💬 <span>達成メンバー同士でLinkedIn活用ノウハウを<strong style="color:var(--t);">情報共有</strong>しあえる、クローズドなグループ</span></div>
+            <div class="ic-reward-item">🎓 <span>高谷さん（LinkedIn Japan社員）による<strong style="color:var(--t);">定期的なLinkedInコンサルティング</strong>を受けられる</span></div>
+            <div class="ic-reward-item">🚀 <span>同じ熱量を持つメンバーと切磋琢磨できる環境で、さらに成長を加速させよう</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- 鉄の掟 -->
     <div style="margin-bottom:18px;">
       <div class="sh"><span class="sh-t">🛑 絶対に守るべき「鉄の掟」3ヶ条</span></div>
@@ -765,6 +822,44 @@ a{color:inherit;text-decoration:none;}
               <div class="gem-in"><strong>• 入れるもの：</strong>今日あった出来事、学んだこと、感じたことなどの簡単なメモ（短いつぶやきでも、AIがAIっぽさを消して『伸びる型』に変換します）</div>
               <div class="gem-open">Gemを開く →</div>
             </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INVITE CHALLENGE (OB) -->
+    <div style="margin-bottom:18px;">
+      <div class="sh"><span class="sh-t">🏆 達成で特別グループへ招待</span><span class="sh-s">2つのミッションをクリアすると特典あり</span></div>
+      <div class="invite-challenge">
+        <div class="ic-label">LinkedIn チャレンジ</div>
+        <h2 class="ic-title">この2つを達成したら、特別グループへ招待します🎉</h2>
+        <p class="ic-sub">頑張った証として、条件を達成したメンバーをLit ShipのLinkedIn推進グループに招待します。<br>投稿を続けて、繋がりを広げていけば自然と辿り着きます。</p>
+        <div class="ic-conditions">
+          <div class="ic-cond">
+            <div class="ic-cond-ico">📅</div>
+            <div class="ic-cond-body">
+              <strong>① 3週連続投稿</strong>
+              <span>LinkedInへの投稿を3週連続で継続すること。週1回でもOK。まずはここから。</span>
+            </div>
+          </div>
+          <div class="ic-cond">
+            <div class="ic-cond-ico">🤝</div>
+            <div class="ic-cond-body">
+              <strong>② 繋がり300人突破</strong>
+              <span>コネクション数が300人を超えること。申請を続けていれば必ず届く。</span>
+            </div>
+          </div>
+        </div>
+        <div class="ic-reward">
+          <div class="ic-reward-head">
+            <span style="font-size:22px;">🎁</span>
+            <strong>達成特典：LinkedIn 推進グループへの招待</strong>
+            <span class="ic-reward-badge">限定グループ</span>
+          </div>
+          <div class="ic-reward-items">
+            <div class="ic-reward-item">💬 <span>達成メンバー同士でLinkedIn活用ノウハウを<strong style="color:var(--t);">情報共有</strong>しあえる、クローズドなグループ</span></div>
+            <div class="ic-reward-item">🎓 <span>高谷さん（LinkedIn Japan社員）による<strong style="color:var(--t);">定期的なLinkedInコンサルティング</strong>を受けられる</span></div>
+            <div class="ic-reward-item">🚀 <span>同じ熱量を持つメンバーと切磋琢磨できる環境で、さらに成長を加速させよう</span></div>
           </div>
         </div>
       </div>
